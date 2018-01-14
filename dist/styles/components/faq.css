@@ -1,0 +1,204 @@
+.txt-green {
+  color: #37b2aa;
+}
+.txt-white {
+  color: white;
+}
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+}
+.container--s {
+  max-width: 860px;
+  width: 100%;
+  margin: auto;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.coll-w {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.row-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.row-cg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.row-cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.block-shadow {
+  box-shadow: 0px 0px 8.97px 4.03px rgba(31, 44, 96, 0.13);
+}
+.block {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8.97px 4.03px rgba(31, 44, 96, 0.13);
+}
+.section-pad {
+  padding: 50px 0 120px 0;
+}
+.section-wrap {
+  padding: 50px 0;
+}
+.btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  border: solid 2px transparent;
+  padding: 0.5em 2em;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.btn--border-green {
+  color: #37b2aa;
+  border: solid 2px #37b2aa;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.btn--border-green:hover {
+  background: #37b2aa;
+  color: white;
+}
+.btn--green {
+  background: #37b2aa;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.btn--green:hover {
+  background: #3fc4bb;
+  color: white;
+}
+.btn--shadow {
+  transition: 0.3s ease-out;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.btn--shadow:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.faq__aside {
+  min-width: 220px;
+  margin-right: 30px;
+}
+.faq__aside .help-txt {
+  color: #444444;
+  font-size: 0.8rem;
+  margin: 25px 0;
+}
+.faq__aside .btn {
+  width: 100%;
+}
+.faq .nav-sect {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8.97px 4.03px rgba(31, 44, 96, 0.13);
+  padding: 25px 0;
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.faq .nav-sect__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  color: #1c1f37;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+.faq .nav-sect__item:before {
+  content: '';
+  position: absolute;
+  transition: 0.1s ease-in-out;
+  top: 0;
+  left: -5px;
+  width: 5px;
+  height: 100%;
+  background: #37b2aa;
+}
+.faq .nav-sect__item .num {
+  padding: 0 1em;
+}
+.faq .nav-sect__item:last-child {
+  margin-bottom: 0;
+}
+.faq .nav-sect__item:hover {
+  color: #37b2aa;
+}
+.faq .nav-sect__item.active {
+  color: #37b2aa;
+}
+.faq .nav-sect__item.active:before {
+  left: 0;
+}
+.faq__main {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8.97px 4.03px rgba(31, 44, 96, 0.13);
+  overflow: hidden;
+}
+.faq .txt-cb {
+  background: #f8f8f8;
+  font-size: 0.8rem;
+  padding: 10px 40px;
+  border-bottom: solid 1px #c6c6c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.faq .txt-cb .like-b {
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.faq .txt-cb .like-b .ico {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #5b527a;
+  transition: 0.3s ease-in-out;
+}
+.faq .txt-cb .like-b .ico:last-child {
+  margin-right: 0;
+}
+.faq .txt-cb .like-b .ico:hover {
+  color: #39334c;
+}

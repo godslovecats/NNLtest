@@ -1,0 +1,79 @@
+@import '../base/variables';
+.footer {
+    background: @purple-dark;
+    color: @gray;
+    font-size: 0.8rem;
+    padding: 30px 0;
+    &__wrap {
+        .container;
+        max-width: 1100px;
+        .row-sb;
+        .row-cv;
+    }
+    &__soc {
+        margin-right: 100px;
+        .soc-btns {
+            &__txt {
+                margin: 1em 0;
+            }
+            &__wrap {
+                .row;
+            }
+            &__link {
+                margin-right: 15px;
+                opacity: 0.8;
+                transition: 0.3s ease-in-out;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.footer-map {
+    .row;
+    margin-bottom: 30px;
+}
+
+.fmap-type {
+    .coll-w;
+    padding: 0 30px;
+    border-left: solid 1px white;
+    &:first-child {
+        padding-left: 0;
+        border: none;
+    }
+    &__title {
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    &__wrap {
+        .row;
+        line-height: 1.5em;
+        .coll {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    color: white;
+                }
+                &:active {
+                    color: @green;
+                }
+            }
+        }
+    }
+}

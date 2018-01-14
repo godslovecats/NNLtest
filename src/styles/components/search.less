@@ -1,0 +1,40 @@
+@import '../base/variables';
+.search {
+    position: relative;
+    width: 450px;
+    margin: auto;
+    font-size: 1rem;
+    .icon-search {
+        position: absolute;
+        right: 0;
+        bottom: 0.5em;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+        color: @purple;
+    }
+    &__wrap {
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: solid 2px @purple;
+        padding: 0.5em 1.5em 0.5em 0.5em;
+        box-sizing: border-box;
+        transition: 0.3s ease-in-out;
+        width: 100%;
+        &:focus {
+            border-bottom: solid 2px @green;
+            ~.icon-search {
+                color: @green;
+            }
+        }
+    }
+    &__ico {
+        position: absolute;
+        right: 0;
+        top: calc(~'50% - 15px');
+        width: 30px;
+        height: 30px;
+        color: @purple;
+        transition: 0.3s ease-in-out;
+    }
+}

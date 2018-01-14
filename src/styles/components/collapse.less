@@ -1,0 +1,72 @@
+@import '../base/variables';
+
+.collapse {
+    position: relative;
+    &:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background: @green;
+        top: 0;
+        left: -5px;
+        transition: 0.1s ease-in-out;
+    }
+    &__header {
+        padding: 25px 40px;
+        position: relative;
+        border-bottom: solid 1px darken(@purple-wlight, 15%);
+        transition: 0.3s ease-in-out;
+                /*font-family: 'Poppins', sans-serif;*/
+                font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+            background: @purple-wlight;
+        }
+        .icon-arrow {
+            position: absolute;
+            cursor: pointer;
+            font-size: 0.8rem;
+            right: 30px;
+            top: calc(~'50% - 0.4rem');
+            transition: 0.3s cubic-bezier(0, 1, 0.5, 1);
+        }
+    }
+    &__wrap {
+        transition: 0.5s cubic-bezier(0, 1, 0.5, 1);
+        max-height: 0;
+        overflow: hidden;
+    }
+    &__body {
+        padding: 25px 40px;
+        .txt {
+            line-height: 1.5em;
+            margin-bottom: 2em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        } 
+    }
+    &__footer {
+        padding: 25px 40px;
+    }
+    &.active {
+        .collapse__header {
+            &:hover {
+                background: white;
+            }
+        }
+        .icon-arrow {
+            transform: rotate(90deg);
+        }
+        .collapse__wrap {
+            max-height: 1000px;
+            overflow: auto;
+        }
+        &:before {
+            left: 0;
+        }
+    }
+}
