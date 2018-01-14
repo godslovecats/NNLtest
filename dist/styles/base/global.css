@@ -8,6 +8,8 @@
   max-width: 1270px;
   width: 100%;
   margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .container--s {
   max-width: 860px;
@@ -108,4 +110,5 @@ body {
   font-weight: 300;
   background: white;
   color: #180c45;
+  box-sizing: border-box;
 }

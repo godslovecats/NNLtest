@@ -8,6 +8,8 @@
   max-width: 1270px;
   width: 100%;
   margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .container--s {
   max-width: 860px;
@@ -146,6 +148,7 @@
   padding: 0.5em 1.5em 0.5em 1em;
   position: relative;
   z-index: 1;
+  white-space: nowrap;
 }
 .info-dropdown .val span {
   position: relative;
